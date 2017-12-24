@@ -1,0 +1,137 @@
+@font-face {
+    font-family:'Berlingske Sans';
+    src:	url('./fonts/BerlingskeSans-Rg.eot');
+    src:	url('./fonts/BerlingskeSans-Rg.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/BerlingskeSans-Rg.woff2') format('woff2'),
+    url('./fonts/BerlingskeSans-Rg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto 100px;
+}
+
+.cards-tree_header {
+    font-weight: 900;
+    font-family: "Berlingske Sans", Georgia, "Times New Roman", Times, serif;
+    font-size: 55px;
+    margin: .7em 0 0 150px;
+    width: 100%;
+}
+
+.cards-tree_header:after {
+    content: "";
+    width: 100%;
+    height: 105px;
+    background: url(../i/arrow.png) 150px 0 no-repeat;
+    display: block;
+    margin: 10px 0;
+}
+
+.card {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.card-content {
+    border: 1px solid black;
+    padding: 10px 0;
+    background: white;
+    position: relative;
+}
+
+
+.card-content_in {
+    margin: 0 -1px;
+    padding: 5px 20px;
+    background: white;
+    color: #b18f20;
+    font: normal 28px/32px Tahoma,Arial,Helvetica,Sans-Serif;
+}
+
+.card-buttons {
+    overflow: hidden;
+}
+
+.card-button_out {
+    display: block;
+    width: 50%;
+    height: 30px;
+    float: left;
+    background: url(../i/arrow.png) center top no-repeat;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+
+.card_viewtype_answer {
+    width: 600px;
+
+}
+
+.card_viewtype_answer .card-content {
+    background: #f7f1d1;
+    border: none;
+
+}
+
+.card_viewtype_answer .card-content_in {
+    background: none;
+    color: black;
+    font: normal 14px/20px "Berlingske Sans", Georgia, "Times New Roman", Times, serif;
+}
+
+.card_viewtype_answer .card-button_out {
+    background: none;
+}
+
+
+.card_viewtype_answer .card-button_out {
+    width: 100%
+}
+
+.card-button_out.selected {
+    height: 85px;
+}
+
+.card-button {
+    display: inline-block;
+    height: 28px;
+    border: 1px solid black;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    background: white;
+    cursor: pointer;
+}
+
+.card_viewtype_answer .card-button {
+    width: 150px;
+}
+
+
+.card-button:hover,
+.selected .card-button {
+    background: #b18f20;
+}
+
+.card-button:hover .card-button_in,
+.selected .card-button .card-button_in {
+    background: none;
+    color: white;
+}
+
+.card-button_in {
+    display: block;
+    margin: -1px 10px;
+    height: 30px;
+    background: white;
+    font: normal 18px/30px Tahoma,Arial,Helvetica,Sans-Serif;
+    color: #b18f20;
+}
+
+
+

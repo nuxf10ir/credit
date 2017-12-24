@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Скорректируйте кредитную политику по итогам года</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <h1>Скорректируйте кредитную политику по итогам года</h1>
+
+            <div id="cards-tree" class="cards-tree"></div>
+
+        </div>
+
+        <script id="card-tmpl" type="text/x-javascript-tmpl">
+
+            <div class="card card_viewtype_{{type}}">
+
+                <div class="card-content">
+
+                    <div class="card-content_in">
+                        {{text}}
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    {[if (buttons !== null) {]}
+
+                        <div class="card-button_out">
+
+                            <a class="card-button button_type_yes"
+                               data-id="{{buttons.yes.id}}"
+                               data-method="{{buttons.yes.method}}">
+
+                                <span class="card-button_in">Да</span>
+
+                            </a>
+
+                        </div>
+
+                        <div class="card-button_out">
+
+                            <a class="card-button button_type_no"
+                               data-id="{{buttons.no.id}}"
+                               data-method="{{buttons.no.method}}">
+
+                                <span class="card-button_in">Нет</span>
+
+                            </a>
+
+                        </div>
+
+                    {[ } else  {]}
+
+                        <div class="card-button_out">
+
+                            <a class="card-button"
+                               data-method="reset">
+
+                                <span class="card-button_in">Пройти заново</span>
+
+                            </a>
+
+                        </div>
+
+                    {[ } ]}
+
+                </div>
+
+
+            </div>
+
+        </script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/underscore.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
